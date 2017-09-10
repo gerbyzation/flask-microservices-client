@@ -13,7 +13,7 @@ ARG NODE_ENV
 ENV NODE_ENV $NODE_ENV
 ENV REACT_APP_USERS_SERVICE_URL $REACT_APP_USERS_SERVICE_URL
 
-# install and chache appd ependencies
+# install and chache app dependencies
 ADD package.json /usr/src/app/package.json
 RUN npm install --silent
 RUN npm install react-scripts@0.9.5 -g --silent
